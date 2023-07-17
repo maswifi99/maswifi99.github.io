@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>QR CODE SCANNER</title>
-	<link rel="icon" href="img/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/html5-qrcode.min.js"></script>
-	
+  <title>HTML5 QR Code Scanner</title>
+  <link rel="icon" href="img/favicon.ico">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/html5-qrcode.min.js"></script>
 </head>
 <body>
-		<center>
-			<div class="container">
-			<img id="logo" class="logo"><br>
-			<div class="badge">
-			<h3 id="header"></h3>
-			</div>
-			<br></br>
-			<div id="reader"></div><hr><br>
-			<div style="display: table-cell; padding:3px;">
-	        <a class="btn" style="border-radius: 5px;" id="reload" onclick="location.reload();"><i class="text-light fa fa-refresh"></i> Reload Camera</a>
-	        </div>
-	        <div style="display: table-cell; padding:3px;">
-	        <a class="btn" style="border-radius: 5px;" href="intent://maswifi99.github.io/myqr#Intent;scheme=http;package=com.android.chrome;end" onclick="openInChrome();"><i class="fa fa-chrome"></i> Open in Chrome</a>
-	        </div><br><hr>
-	        <div id="result"></div>
-	        <div class="badge">Android / IOS Section</div>
-	            <p>Scanning Using File In Your Device</p>
-	            <div id="imageFile"></div>
-			            <div class="input">
-			            <input name=file style="display:none;" id="qr-input-file" type="file" accept="image/*"/>                  
-			            <button class="btn" style="border-radius: 5px;" type="button" name=file onclick="file()"><i class="fa fa-camera" aria-hidden="true"> Open File / Camera</i></button>                                 
-	            	</div>
-	            <div>QR CODE SCANNER <br>Powered by<a class="font-weight-bold" href="https://scanapp.org"> ScanApp.org</div><br>
-	        
-	        </div>
-	        </center>
-	        
-<script type="text/javascript">load();</script>
-<script src="js/scannerv2.js"></script>
+  <center>
+      <div class="container">
+      <img id="logo" class="logo">
+      <div class="badge blink">
+      <h3 id="header"></h3>
+      </div>
+     
+      <div id="reader"></div>
+      <div style="display: table-cell; padding:3px;">
+          <a class="btn" style="border-radius: 5px;" id="reload" onclick="location.reload();"><i class="text-light fa fa-refresh"></i> Reload Camera</a>
+          </div>
+          <div style="display: table-cell; padding:3px;">
+          <a class="btn" style="border-radius: 5px;" href="intent://maswifi99.github.io/myqr#Intent;scheme=http;package=com.android.chrome;end" onclick="openInChrome();"><i class="fa fa-chrome"></i> Open in Chrome</a>
+          </div><br>
+          <div id="result"></div>
+          <div class="badge">Android / IOS Section</div>
+              <p>Scanning Using File In Your Device</p>
+              <div id="imageFile"></div>
+                  <div class="input">
+                  <input name=file style="display:none;" id="qr-input-file" type="file" accept="image/*"/>                  
+                  <button class="btn" style="border-radius: 5px;" type="button" name=file onclick="file()"><i class="fa fa-camera" aria-hidden="true"> Open File</i></button>                                 
+                </div>
+              <div>QR CODE SCANNER Powered by <a class="font-weight-bold" style="color: #1a8cff" href="https://scanapp.org">ScanApp.org</div><br>
+          
+          </div>
+  </center>   
+  <script type="text/javascript">load();</script>
+  <script src="js/scannerv3.js"></script>
 </body>
 </html>
