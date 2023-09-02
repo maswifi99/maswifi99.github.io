@@ -183,5 +183,7 @@ footer {
 .footer-copyright-link {
   background-color: #007bff;
   color: #fff;
+  text-decoration: none;
+  cursor: pointer;
   text-shadow: 1px 1px 1px #010101;
 }
