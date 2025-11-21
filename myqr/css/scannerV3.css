@@ -13,7 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url("img/gb1.jpg");
+  background-image: url("img/tree.jpg");
   background-color: #f0f0f0;
   padding-top: 10px;
 }
@@ -236,4 +236,5 @@ footer a:hover {
     font-size: 0.75rem;
   }
 }
+
 
